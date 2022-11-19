@@ -1,0 +1,1 @@
+In this repository I'll do the exercises proprosed on freeCodeCamp course for JavaScript.
