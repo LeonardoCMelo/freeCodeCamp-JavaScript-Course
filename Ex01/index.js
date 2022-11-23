@@ -1,10 +1,13 @@
 let count = 0
+let count_el = document.getElementById("counter")
 
 function increment_clk() {
     count+=1
-    document.getElementById("counter").innerText = count
+    count_el.innerText = count
 }
 
 function save_clk(){
-    document.getElementById("save-paragraph").innerText = document.getElementById("save-paragraph").innerText + document.getElementById("counter").innerText + " - "
+    document.getElementById("save-paragraph").textContent += count + " - "
+    count = 0
+    document.getElementById("counter").innerText = count
 }
